@@ -1,5 +1,5 @@
 # android-reddit-feeder-aac
-Demo application of [Reddit](https://www.reddit.com/hot) news feeder with Android Architecture Components.
+Demo application of [Reddit](https://www.reddit.com/hot) news feeder with Android Architecture Components, for self-learning.
 
 ## Techs
 
@@ -17,6 +17,6 @@ Currently, this app just allow you to fetch hot reddit news.
 - save data to local database as cache(**Room** of AAC)
 - navigate to detail page(**Navigation** of Jet Pack)
 - save articles, toggle all or only saved articles
-- rotation-aware(lifecycle-aware-conponents)
+- rotation-aware(**lifecycle-aware-conponents**)
 
 
