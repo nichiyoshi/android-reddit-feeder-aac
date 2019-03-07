@@ -4,7 +4,7 @@ Demo application of [Reddit](https://www.reddit.com/hot) news feeder with Androi
 [<img src="https://dply.me/7vcood/button/large" alt="Try it on your device via DeployGate">](https://dply.me/7vcood#install)
 
 **This app is still in progress!!**
-Currently, this app just allow you to fetch hot reddit news.
+Currently, this app just allow you to fetch hot reddit news with only auther names and article titles.
 
 ## Techs
 
