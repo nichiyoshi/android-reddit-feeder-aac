@@ -3,6 +3,9 @@ Demo application of [Reddit](https://www.reddit.com/hot) news feeder with Androi
 
 [<img src="https://dply.me/7vcood/button/large" alt="Try it on your device via DeployGate">](https://dply.me/7vcood#install)
 
+**This app is still in progress!!**
+Currently, this app just allow you to fetch hot reddit news.
+
 ## Techs
 
 - **Retrofit**
@@ -10,9 +13,6 @@ Demo application of [Reddit](https://www.reddit.com/hot) news feeder with Androi
 - **ViewModel(AAC)**
 - **LiveData(AAC)**
 - **Data Binding(Jet Pack)**
-
-**This app is still in progress!!**
-Currently, this app just allow you to fetch hot reddit news.
 
 ## Planning Functions
 
