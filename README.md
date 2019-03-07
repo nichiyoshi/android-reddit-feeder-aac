@@ -1,6 +1,8 @@
 # android-reddit-feeder-aac
 Demo application of [Reddit](https://www.reddit.com/hot) news feeder with Android Architecture Components, for self-learning.
 
+I'm trying to follow the pattern of [todo-mvvm-live-kotlin](https://github.com/googlesamples/android-architecture/tree/todo-mvvm-live-kotlin/) in [Android Architecture Blueprints](https://github.com/googlesamples/android-architecture)
+
 [<img src="https://dply.me/7vcood/button/large" alt="Try it on your device via DeployGate">](https://dply.me/7vcood#install)
 
 **This app is still in progress!!**
