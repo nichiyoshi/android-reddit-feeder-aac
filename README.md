@@ -3,7 +3,8 @@ Demo application of [Reddit](https://www.reddit.com/hot) news feeder with Androi
 
 I'm trying to follow the pattern of [todo-mvvm-live-kotlin](https://github.com/googlesamples/android-architecture/tree/todo-mvvm-live-kotlin/) in [Android Architecture Blueprints](https://github.com/googlesamples/android-architecture).
 
-Anybody can install this app with [<img src="https://dply.me/7vcood/button/large" alt="Try it on your device via DeployGate">](https://dply.me/7vcood#install)
+Anybody can install this app with
+[<img src="https://dply.me/7vcood/button/large" alt="Try it on your device via DeployGate">](https://dply.me/7vcood#install)
 
 **NOTE**
 
