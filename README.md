@@ -18,5 +18,6 @@ Currently, this app just allow you to fetch hot reddit news.
 - navigate to detail page(**Navigation** of Jet Pack)
 - save articles, toggle all or only saved articles
 - rotation-aware(**lifecycle-aware-conponents**)
+- continuous delivery system (Jenkins or Bitrise or... with Deploygate)
 
 
