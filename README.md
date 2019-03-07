@@ -9,6 +9,7 @@ Feel free to install this app with
 ### **NOTE**
 
 This app is still in progress!! So currently, this app just enable you to fetch "hot" reddit news.
+
 Besides, layout designing will be done later.
 
 ## Techs
