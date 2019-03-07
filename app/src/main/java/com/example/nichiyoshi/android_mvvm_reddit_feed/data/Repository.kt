@@ -14,37 +14,17 @@ import retrofit2.converter.gson.GsonConverterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 
-class Repository: FeedsDataSource {
+class Repository(private val feedsRemoteDataSource: FeedsDataSource): FeedsDataSource {
 
     override suspend fun getFeeds(callback: FeedsDataSource.LoadFeedsCallback) = GlobalScope.launch(Dispatchers.Default){
-        try{
-            val response = getService().fetchFeedsAsync().await()
-            val data = response.data
-            val feeds = data.children.map{ it.data }
-            callback.onFeedsLoaded(feeds)
-        } catch (e: HttpException) {
-            Log.e("error", e.toString())
-            callback.onFeedLoadFailed()
-        } catch (e: Throwable) {
-            Log.e("error", e.toString())
-            callback.onFeedLoadFailed()
-        }
+        feedsRemoteDataSource.getFeeds(object:FeedsDataSource.LoadFeedsCallback{
+            override fun onFeedsLoaded(feeds: List<Feed>) {
+                callback.onFeedsLoaded(feeds)
+            }
+
+            override fun onFeedLoadFailed() {
+                callback.onFeedLoadFailed()
+            }
+        })
     }
-
-    private fun getService(): RedditService{
-
-        val interceptor = HttpLoggingInterceptor()
-        interceptor.level = HttpLoggingInterceptor.Level.BODY
-        val client = OkHttpClient.Builder().addInterceptor(interceptor).build()
-
-        val gson = GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).create()
-        val instance =  Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create(gson))
-            .addCallAdapterFactory(CoroutineCallAdapterFactory())
-            .client(client)
-            .build()
-        return instance.create(RedditService::class.java)
-    }
-
 }

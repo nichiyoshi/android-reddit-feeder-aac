@@ -24,27 +24,6 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
-
-
-        val repository = Repository()
-        GlobalScope.launch(Dispatchers.Default){
-            repository.getFeeds(object: FeedsDataSource.LoadFeedsCallback{
-                override fun onFeedsLoaded(feeds: List<Feed>) {
-                    Log.i("ほげ", "ここ通ってる")
-                    if(feeds.isEmpty()){
-                        Log.i(this@MainActivity::class.simpleName, "空っぽだよ")
-                    }else{
-                        Log.i(this@MainActivity::class.simpleName, "サイズは${feeds.size}")
-                    }
-                }
-
-                override fun onFeedLoadFailed() {
-                    Log.i("ほげ", "こっち通ってる")
-                }
-
-            })
-        }
-
     }
 
     fun obtainViewModel(): MainViewModel = obtainViewModel(MainViewModel::class.java)
