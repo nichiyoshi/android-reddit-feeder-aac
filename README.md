@@ -1,12 +1,14 @@
 # android-reddit-feeder-aac
 Demo application of [Reddit](https://www.reddit.com/hot) news feeder with Android Architecture Components, for self-learning.
 
-I'm trying to follow the pattern of [todo-mvvm-live-kotlin](https://github.com/googlesamples/android-architecture/tree/todo-mvvm-live-kotlin/) in [Android Architecture Blueprints](https://github.com/googlesamples/android-architecture)
+I'm trying to follow the pattern of [todo-mvvm-live-kotlin](https://github.com/googlesamples/android-architecture/tree/todo-mvvm-live-kotlin/) in [Android Architecture Blueprints](https://github.com/googlesamples/android-architecture).
 
+Anybody can install this app from Deploygate below.
 [<img src="https://dply.me/7vcood/button/large" alt="Try it on your device via DeployGate">](https://dply.me/7vcood#install)
 
-**This app is still in progress!!**
-Currently, this app just allow you to fetch hot reddit news with only auther names and article titles.
+**NOTE**
+
+This app is still in progress!! So currently, this app just enable you to fetch "hot" reddit news.
 
 ## Techs
 
